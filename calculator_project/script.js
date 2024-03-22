@@ -1,3 +1,9 @@
+gsap.to("#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btnAdd,#btnResult,#btnMul,#btn7,#btn8,#btn9,#btn0,#btnDiv,#btnAllClear,#btnSub",{
+    x:0,
+    duration:0.6,
+    stagger:0.05
+})
+
 let btn1=document.getElementById('btn1');
 let btn2=document.getElementById('btn2');
 let btn3=document.getElementById('btn3');
