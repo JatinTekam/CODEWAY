@@ -1,0 +1,1015 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+head{
+    width: 100vw;
+    height: 500px;
+    background-color: lawngreen; 
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    width: 100vw;
+    background-color: rgb(32,32,32);
+    padding: 12px 0;
+    position: relative;
+    z-index: 3;
+}
+nav ul h1{
+   color: rgb(198, 38, 38);
+   /* margin-right: 50px; */
+   font-weight: 900;
+   font-size: 1.5vw;
+   position: absolute;
+   padding: 5px;
+   padding:0 34px;
+   left: 0;
+   cursor: pointer;
+}
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 30px;
+    border-radius: 8px;
+    font-size: 1vw;
+}
+nav ul i{
+    display: none;
+    color: white;
+    position: absolute;
+    right: 12px;
+    font-size: 1vw;
+    cursor: pointer;
+
+}
+
+nav ul li a:hover{
+    color: red;
+    background-color: rgb(40, 39, 39);
+    cursor: pointer;
+}
+
+main .main .subMenus{
+    width: 100vw;
+    height: 250px;
+    background-color: rebeccapurple;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    transform: translateY(-250px);
+    transition: all 0.3s;
+    background-color: rgb(32,32,32);
+}
+main .main .subMenus ul{
+list-style-type: none;
+display: flex;
+padding-top: 10px;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+}
+main .main .subMenus ul li a{
+    padding: 4px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+}
+main .main .subMenus ul li a:hover{
+    background-color: black;
+    cursor: pointer;
+}
+main .main .hero-img{
+    width: 100vw;
+    height: 600px;
+    background-image: url(https://images.unsplash.com/photo-1641241714723-4c450e937044?q=80&w=1997&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    filter: brightness(0.5);
+    background-size: cover;
+    background-position: center;
+    padding-top: 150px;
+    padding-left: 300px;
+    /* position: relative; */
+}
+
+
+main .main .hero-img .info{
+    width: 450px;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 3px;
+    /* line-height: 40px; */
+    /* background-color: rgb(22, 22, 22); */
+    padding: 10px;
+}
+
+main .main .hero-img .info p{
+    font-size: 1.1vw;
+    margin-top: 20px;
+    letter-spacing: 6px;
+    line-height: 25px;
+}
+main .main .hero-img .info button{
+    padding: 12px 25px;
+    margin-top: 20px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    letter-spacing: 3px;
+    font-size: 15px;
+    text-transform:uppercase;
+    cursor: pointer;
+}
+main .bikeCatagories{
+    width: 100%;
+    height: 700px;
+    padding: 30px 150px;
+    background-color: rgb(41, 41, 41);
+    margin-bottom: 40px;
+}
+main .bikeCatagories .mainCatgories{
+    width: 100%;
+    height: 100%;
+}
+main .bikeCatagories .mainCatgories .heading{
+    display: flex;
+    justify-content: space-between;
+}
+main .bikeCatagories .mainCatgories .heading h1{
+   color: #e4e4ea;
+   font-size: 3vw;
+   height: 60px;
+   position: relative;
+}
+main .bikeCatagories .mainCatgories .heading h1::after{
+    content: "";
+    width: 50%;
+    height: 6%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+main .bikeCatagories .mainCatgories .heading button{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #e0e0e0;
+    font-weight: 900;
+    background: transparent;
+    padding: 0 25px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 0.9vw;
+    border: 1px solid #000000;
+    transition: all 0.5s;
+}
+main .bikeCatagories .mainCatgories .heading button:hover{
+    background-color: red;
+    color: white;
+}
+.bikesCards{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.bikesCards .box{
+    width: 22vw;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    border-radius: 12px;
+}
+.bikesCards .box img{
+    width: 100%;
+    height: 100%;
+    
+}
+.bikesCards .box .text{
+    padding: 10px 0;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    bottom: -90px;
+    opacity: 60%;
+    gap: 10px;
+    transition: all 0.4s;
+}
+.bikesCards .box .text h3{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+.bikesCards .box .text button{
+    width: 40%;
+    padding: 10px 15px;
+    background: transparent;
+    color: white;
+    /* margin-left: 130px; */
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: 2px solid white;
+}
+.bikesCards .box:hover .text{
+          bottom: 0;
+          padding: 70px 0;
+          opacity: 75%;
+}
+.bikesCards .box:hover .text:hover button{
+    background-color: red;
+}
+main section{
+    width: 100%;
+    height: 600px;
+    /* background-color: coral; */
+}
+main section h1{
+    width: 30%;
+    margin-top: 5px;
+    margin: auto;
+    color: #212254;
+   font-size: 3vw;
+   font-weight: 900;
+   position: relative;
+}
+main section h1::after{
+    content: "";
+    width: 50%;
+    height: 6%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 85px;
+}
+main section .models{
+    width: 90%;
+    height: 550px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    /* background-color: rebeccapurple; */
+}
+.logo-img{
+    width: 300px;
+    height: 250px;
+    padding: 35px;
+}
+.logo-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#bikesimg{
+    height: 500px;
+}
+#bikesimg .bike-section{
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+}
+#bikesimg .bike-section .bike-info{
+    width: 75%;
+    height: 400px;
+    /* background-color: rgb(48, 136, 136); */
+    display: flex;
+    gap: 5px;
+    position: relative;
+}
+#bikesimg .bike-section .bike-info .bike-card{
+    width: 20%;
+    height: 100%;
+    /* background-color: palevioletred; */
+    transition: all 0.5s;
+}
+#bikesimg .bike-section .bike-info .bike-card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    /* border: 2px solid rgb(0, 0, 0); */
+    box-shadow: 0 0 10px rgb(119, 119, 119);
+}
+#bikesimg .bike-section .bike-info .bike-card:hover{
+    width: 100%;
+}
+#events{
+    width: 100%;
+    height: 1500px;
+    margin-top: 35px;
+    padding: 0 100px;
+    /* background-color: rebeccapurple; */
+}
+#events .heading1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+#events .heading1 h2{
+    color: #212254;
+    font-size: 2.4vw;
+    height: 60px;
+    border-bottom: 2px solid red;
+}
+#events .heading1 button{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #000000;
+    font-weight: 900;
+    background: transparent;
+    padding: 0 25px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 0.9vw;
+    border: 1px solid #000000;
+    transition: all 0.5s;
+}
+#events .heading1 button:hover{
+
+    background-color: red;
+    color: white;
+}
+#events .main-events{
+    width: 100%;
+    height: 660px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+#events .main-events .comman{
+    width: 50%;
+    height: 330px;
+    position: relative;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+}
+
+#events .main-events .comman img{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 12px;
+   box-shadow: 0 0 10px black;
+}
+#events .main-events .box{
+    width: 50%;
+    height: 330px;
+    color: rgb(0, 0, 0);
+    /* position: absolute; */
+    /* background-color: black; */
+    opacity: 0.7;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+ #events .main-events .box h2{
+    font-size: 2.5vw;
+    letter-spacing: 5px;
+    position: relative;
+    z-index: 10;
+    animation: space 2s ease infinite;
+} 
+@keyframes space {
+    0%{
+        letter-spacing: 5px;
+        
+    }
+    25%{
+        letter-spacing: 15px;
+       
+    }
+    50%{
+        letter-spacing: 25px;
+        
+    }
+    75%{
+        letter-spacing: 35px;
+       
+    }
+    100%{
+        letter-spacing: 5px;
+       
+    }
+    
+}
+#service{
+    width: 100vw;
+    height: 450px;
+    padding-top: 20px;
+    background-color: black;
+    padding:20px 20px 0 20px;
+
+}
+#service  h3{
+    color: #fff;
+    font-size: 2.4vw;
+    padding: 5px;
+    text-align: center;
+}
+#service .service-box{
+    width: 100%;
+    height: 80%;
+    /* margin: 0 20px; */
+    /* background-color: beige; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+#service .service-box .box{
+    width: 200px;
+    height: 250px;
+   border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#service .service-box .box i{
+    font-size: 3vw;
+    filter: invert(1);
+}
+#service .service-box .box img{
+    filter: invert(1);
+}
+#service .service-box .box h2{
+    margin-top: 20px;
+    color: white;
+    font-size: 2vw;
+}
+#service .service-box .box:hover{
+    background-color: red;
+}
+#contact{
+    width: 100vw;
+    height: 550px;
+    background-image: url(https://plus.unsplash.com/premium_photo-1684096758470-1296de752adc?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center 20%;
+    background-size: cover;
+}
+#contact .box{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    filter: opacity(0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#contact .box h4{
+    color: white;
+    text-transform: uppercase;
+    font-size: 3vw;
+    letter-spacing: 4px;
+}
+#contact .box button{
+    /* margin-top: 20px; */
+    padding: 7px 20px;
+    font-size: 1.3vw;
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+#contact .box .allicon{
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    gap: 60px;
+}
+#contact .box .allicon i{
+    font-size: 2vw;
+    margin-left: 15px;
+}
+#contact .box .allicon i:hover{
+    color: red;
+}
+
+
+/* ---------------MEDIA-QUERUS------------- */
+
+@media (max-width:1520px){
+
+    .bikesCards .box{
+        width: 22vw;
+    }
+    main section{
+        height: 800px;
+    }
+}
+
+@media (max-width:1310px){
+    main .bikeCatagories{
+        padding: 30px 50px;
+}
+.bikesCards .box{
+    width: 320px;
+    height: 250px;  
+}
+
+
+}
+
+
+@media (max-width:1200px){
+    nav ul li a{
+        font-size: 1.2vw;
+        padding: 0 15px;
+    }
+    nav ul h1{
+        font-size: 1.6vw;
+    }
+    main .main .hero-img .info{
+        color: black;
+    }
+    main .main .hero-img .info p{
+        font-size: 1.5vw;
+        line-height: 25px;
+    }
+    .bikesCards .box{
+        width: 28vw;
+        
+    }
+
+}
+
+
+@media (max-width:1150px){
+    nav ul li a{
+        font-size: 1.2vw;
+        padding: 0 10px;
+    }
+    nav ul h1{
+        font-size: 1.6vw;
+    }
+    main .main .hero-img .info{
+        color: black;
+    }
+    main .main .hero-img .info p{
+        font-size: 1.5vw;
+        line-height: 25px;
+    }
+    main .bikeCatagories{
+        padding: 30px 20px;
+    }
+    .bikesCards .box{
+        width: 28vw;
+        height: 20vw; 
+    }
+    #bikesimg .bike-section .bike-info{
+        width: 90%;
+    }
+    #bikesimg .bike-section .bike-info .bike-card{
+        width: 20%;
+    }
+
+}
+@media (max-width:1020px){
+    nav ul li a{
+        font-size: 1.3vw;
+        padding: 0 10px;
+    }
+    nav ul h1{
+        font-size: 1.5vw;
+    }
+    main .main .hero-img .info{
+        color: black;
+    }
+    main .main .hero-img .info p{
+        font-size: 1.5vw;
+        line-height: 25px;
+    }
+    main .bikeCatagories{
+        height: 700px;
+        padding: 30px 20px;
+    }
+    
+    .bikesCards .box{
+        width: 29vw;
+        height: 20vw;
+    }
+    main section{
+        height: 1100px;
+    }
+
+
+}
+@media (max-width:980px){
+    main .main .hero-img{
+     padding-top: 170px;
+     padding-left: 200px;
+    }
+    nav ul h1{
+        font-size: 1.5vw;
+    }
+
+    nav ul li a{
+        font-size: 1.3vw;
+        padding: 0 5px;
+    }
+    main .main .hero-img .info{
+        color: black;
+    }
+    main .main .hero-img .info p{
+        font-size: 2vw;
+        /* margin-top: 20px; */
+        line-height: 25px;
+    }
+    main .bikeCatagories{
+        height: 1000px;
+    }
+    main .bikeCatagories .mainCatgories .heading h1::after{
+        bottom: 20px;
+        right: 0;
+    }
+    main .bikeCatagories .mainCatgories .heading button{
+        font-size: 1.3vw;
+        padding: 15px ;
+    }
+    .bikesCards .box{
+        width: 45vw;
+        height: 25vw; 
+    }
+    main section h1{
+        width: 40%;
+        font-size: 3.8vw;
+        text-align: center; 
+     }
+     #events .heading1 h2{
+        font-size: 3vw;
+    }
+    
+     #events .main-events .box h2{
+        font-size: 2.5vw;
+     }
+     #events .heading1 button{
+        font-size: 1.5vw;
+    }
+
+    
+}
+@media (max-width:850px){
+    nav ul h1{
+        font-size: 2vw;
+       
+    }
+    nav ul{
+        gap:10;
+    }
+    main .main .hero-img .info{
+        color: black;
+    }
+
+    nav ul li{
+        /* margin-left: 6px; */
+        font-size: 1.3vw;
+       padding: 0 3px;
+    }
+    main .main .hero-img .info p{
+        font-size: 1.8vw;
+        /* margin-top: 20px; */
+        line-height: 20px;
+    }
+    main .bikeCatagories .mainCatgories .heading h1{
+       font-size: 3.5vw;
+    }
+    main .bikeCatagories{
+        height: 850px;
+    }
+    .bikesCards .box{
+        width: 45vw;
+        height: 25vw;
+        margin: 5px;
+    }
+    
+    #events .main-events .box h2{
+        font-size: 2vw;
+     }
+     #service .service-box .box{
+        width: 25vw;
+     }
+     #contact .box button{
+        font-size: 2vw;
+     }
+     #contact .box .allicon i{
+        font-size: 3vw;
+    }
+    
+}
+
+@media (max-width:750px) {
+    nav{
+        background-color: rgba(32, 32, 32, 0.438);
+    }
+    nav ul h1{
+        right: 10;
+    }
+
+    nav ul li{
+        display: none;
+    }
+    nav ul i{
+        display: block;
+        font-size: 15px;
+    }
+    main .main .subMenus{
+        display: block;
+    }
+    main .main .hero-img{
+        padding-top: 200px;
+        padding-left: 200px;
+    }
+    main .main .hero-img .info{
+        color: black;
+    }
+    main .main .hero-img .info p{
+        font-size: 1.8vw;
+        margin-top: 20px;
+    }
+    main .bikeCatagories{
+        height: 750px;
+    }
+    .bikesCards .box{
+         width: 45vw;
+         height: 25vw;
+         margin: 5px;
+            
+        }
+        main section{
+            height: 1100px;
+        }
+        #events{
+            padding: 0 10px;
+            /* background-color: rebeccapurple; */
+        }
+        #events .main-events .box h2{
+            font-size: 2vw
+         }
+        
+}
+@media (max-width:667px){
+
+    main section{
+        height: 2100px;
+    }
+}
+@media (max-width:650px){
+
+    main .main .hero-img{
+        padding-top: 200px;
+        padding-left: 150px;
+    }
+    main .bikeCatagories .mainCatgories .heading button{
+        font-size: 1.6vw;
+    }
+    main .bikeCatagories{
+        height: 650px;
+    }
+    .bikesCards .box{
+        width: 43vw;
+        height: 25vw;  
+    }
+    .bikesCards .box .text button{
+        font-size: 2.4vw;
+        width: 50%;
+    }
+    main section{
+        height: 2100px;
+    }
+    #events{
+        padding: 0 20px;
+        /* background-color: rebeccapurple; */
+    }
+    #events .main-events .box h2{
+        font-size: 2vw;
+     }
+     #service{
+        height: 600px;
+        padding: 0 0;
+     }
+     #service h3{
+        font-size: 5vw;
+        padding: 15px 0;
+     }
+     #service .service-box .box{
+        width: 35vw;
+     }
+     #service .service-box .box i{
+        font-size: 7vw;
+     }
+     #service .service-box .box h2{
+        font-size: 4vw;
+     }
+}
+@media (max-width:570px){
+    main .main .hero-img{
+        padding-top: 200px;
+        padding-left: 70px;
+    }
+    main .main .hero-img .info{
+        color: black;
+    }
+    main .main .hero-img .info p{
+        font-size: 2vw;
+        letter-spacing: 2px;
+    }
+    main .main .hero-img .info button{
+        padding: 12px 15px;
+        margin-top: 20px;
+        font-size: 8px;
+        text-transform:uppercase;
+        cursor: pointer;
+    }
+    main .bikeCatagories .mainCatgories .heading h1{
+        font-size: 4.7vw;
+     }
+     main .bikeCatagories .mainCatgories .heading button{
+        font-size: 2vw;
+        padding: 6px 12px;
+     }
+     main .bikeCatagories{
+        height: 1400px;
+    }
+    .bikesCards .box{
+        width: 70vw;
+        height: 35vw;
+    }
+    main section h1{
+        width: 60%;
+        font-size: 4.8vw; 
+     }
+     #events{
+        padding: 0 0;
+        /* background-color: rebeccapurple; */
+    }
+     #events .heading1 h2{
+        font-size: 4vw;
+    }
+    #events .heading1 button{
+        font-size: 2vw;
+    }
+   
+    #events .main-events .comman{
+        width: 50%;
+        justify-content: flex-end;
+    }
+    #events .main-events .comman h2{
+        font-size: 2.5vw;
+     }
+     #contact .box h4{
+        font-size: 4vw;
+     }
+     #contact .box button{
+        font-size: 2.5vw;
+     }
+     #contact .box .allicon {
+        gap: 20px;
+     }
+     #contact .box .allicon i{
+        font-size: 3.5vw;
+    }
+}
+@media (max-width:470px){
+    nav{
+        height: 40px;
+        padding-top: 20px;
+    }
+
+    nav ul h1,i{
+        font-size: 3vw;
+    }
+    
+    main .main .hero-img .info{
+        width: 72vw;
+    }
+    main .main .hero-img .info h1{
+        font-size: 5vw;
+    }
+    main .main .hero-img{
+        padding-top: 200px;
+        padding-left: 70px;
+        background-position: center right;
+    }
+    main .main .hero-img .info p{
+        font-size: 3vw;
+        letter-spacing: 2px;
+        line-height: 15px;
+    }
+    main .bikeCatagories .mainCatgories .heading{
+       justify-content: center;
+    }
+    main .bikeCatagories .mainCatgories .heading h1{
+        font-size: 7vw;
+    }
+    main .bikeCatagories .mainCatgories .heading h1::after{
+        width: 100%;
+    }
+     main .bikeCatagories .mainCatgories .heading button{
+        /* padding: 6px 12px; */
+        display: none;
+     }
+     main .bikeCatagories{
+        height: 1750px;
+    }
+    .bikesCards .box{
+        width: 80vw;
+        height: 55vw;  
+    }
+    main section h1{
+        width: 70%;
+        font-size: 7vw; 
+     }
+     #events{
+        padding: 0 0;
+        /* background-color: rebeccapurple; */
+    }
+    #events .heading1{
+        justify-content: center;
+    }
+    #events .heading1 h2{
+        font-size: 7vw;
+        height: 45px;
+    }
+    #events .heading1 button{
+       display: none;
+    }
+    #events .main-events .comman img{
+        object-fit: cover;
+        object-position: 70%;
+    }
+    #events .main-events .box h2{
+        font-size: 2.5vw;
+     }
+     #events .main-events .comman{
+        width: 45%;
+    }
+    #events .main-events .box{
+        width: 55%;
+    }
+    #service{
+        height: 900px;
+    }
+    #service .service-box .box{
+        width: 200px;
+     }
+}
+@media (max-width:370px){
+
+    main .bikeCatagories{
+        height: 1500px;
+    }
+    #contact .box h4{
+        font-size: 4vw;
+     }
+     #contact .box button{
+        font-size: 2.5vw;
+     }
+     #contact .box .allicon i{
+        font-size: 5vw;
+    }
+   
+}
+
+@media (max-width:340px){
+
+    main .bikeCatagories{
+        height: 1400px;
+    }
+}
